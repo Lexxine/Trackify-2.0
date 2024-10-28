@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Artist Card</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+    <link rel="stylesheet" href="/css/media.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="ftco-section">
+    <div class="container7">
+        <div class="work-wrap7">
+            <div class="img order-md-last">
+                <img th:src="${artist.images[0].url}" alt="Artist Image">
+            </div>
+            <div class="text d-flex align-items-center">
+                <div class="desc w-100">
+                    <h2 class="mb-4" th:text="${artist.name}">Define Artist</h2>
+
+                    <!-- Artist Info -->
+                    <div class="artist-info">
+                        <p class="info"><span>Gatunki:</span> <span th:text="${artist.genres}">Pop, Rock</span></p>
+                        <p class="info"><span>Obserwujący:</span> <span th:text="${artist.followers.total}">1,234,567</span></p>
+                        <p class="info"><span>Popularność:</span> <span th:text="${artist.popularity} + '/100'">85/100</span></p>
+                        <a class="btn btn-dark btn-learn-more" th:href="${artist.external_urls.spotify}" target="_blank">Learn More</a>
+                    </div>
+                    <!-- End Artist Info -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

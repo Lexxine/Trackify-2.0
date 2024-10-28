@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Najczęściej Słuchani Artyści</title>
+    <link rel="stylesheet" href="/css/stylesArtists.css">
+</head>
+<body>
+<header class="header">
+    <div class="header-content">
+        <h1 class="display-1 lh-1 mb-3">My Top Artists</h1>
+    </div>
+</header>
+
+<section class="artists">
+    <ol class="artist-list">
+        <li th:each="artist, iterStat : ${artists}" class="artist-card">
+            <div class="artist-info">
+                <div class="artist-number-wrapper">
+                    <span class="artist-number" th:text="${iterStat.index + 1}">1</span>
+                </div>
+
+                    <div class="artist-details">
+                        <img th:src="${artist.images[0].url}" alt="Image of Artist" class="artist-image" />
+                        <a th:href="@{/artist/{id}(id=${artist.id})}" class="text-decoration-none">
+                        <h3 th:text="${artist.name}">Artist Name</h3> </a>
+                    </div>
+            </div>
+        </li>
+    </ol>
+</section>
+
+<footer>
+    <p>&copy; 2024 - Your Music Platform</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Artist Card</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+    <link rel="stylesheet" href="/css/media.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="ftco-section">
+    <div class="container7">
+        <div class="work-wrap7">
+            <div class="img order-md-last">
+                <img th:src="${track.album.images[0].url}" alt="Artist Image">
+            </div>
+            <div class="text d-flex align-items-center">
+                <div class="desc w-100">
+                    <h2 class="mb-4" th:text="${track.name}">Define Artist</h2>
+
+                    <div class="artist-info">
+                        <p class="info"><span>Artysta:</span>
+                            <span th:each="artist : ${track.artists}">
+                <span th:text="${artist.name}"></span>
+            </span>
+                        </p>
+                        <p class="info"><span>Popularność:</span> <span th:text="${track.popularity}  + '/100'">80/100</span></p>
+                        <p class="info"><span>Album:</span> <span th:text="${track.album.getName()}">Pop, Rock</span></p>
+                        <p class="info"><span>Liczba utworów w albumie:</span> <span th:text="${track.album.total_tracks}">12</span></p>
+                        <p class="info"><span>Data wydania:</span> <span th:text="${track.album.release_date}">2023-10-22</span></p>
+
+
+                        <p class="info"><span></span></p>
+                        <audio controls>
+                            <source th:src="${track.preview_url}" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a class="btn btn-dark btn-learn-more" th:href="${track.external_urls.spotify}" target="_blank">Learn More</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

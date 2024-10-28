@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Najczęściej Słuchane Gatunki Muzyczne</title>
+
+    <link rel="stylesheet" href="/css/stylesArtists.css">
+    <style>
+        .header {
+            position: relative;
+            background-image: url('/assets/img/jack-barton-6hDusvjc_IQ-unsplash.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+            color: white;
+        }
+        .header-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .artist-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="header-content">
+        <h1 class="display-1 lh-1 mb-3">My Top Genres</h1>
+    </div>
+</header>
+
+<section class="artists">
+    <ol class="artist-list">
+        <li th:each="genre, iterStat : ${topGenres.entrySet()}" class="artist-card">
+            <div class="artist-info">
+                <div class="artist-number-wrapper">
+                    <span class="artist-number" th:text="${iterStat.index + 1}">1</span>
+                </div>
+                <div class="artist-details">
+                    <h3 th:text="${genre.key}">Gatunek Muzyczny</h3>
+                </div>
+            </div>
+        </li>
+    </ol>
+</section>
+
+<footer>
+    <p>&copy; 2024 - Your Music Platform</p>
+</footer>
+</body>
+</html>

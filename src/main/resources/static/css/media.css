@@ -1,0 +1,93 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #b493ef;
+  margin: 0;
+}
+
+.ftco-section {
+  padding: 60px 0;
+}
+
+.container7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.work-wrap7 {
+  background-color: #b493ef;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  min-height: 450px;
+}
+
+.work-wrap7:hover {
+  transform: scale(1.05);
+}
+
+.img {
+  flex-basis: 50%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.desc {
+  flex-basis: 50%;
+  flex-grow: 1;
+  padding: 30px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.artist-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.info {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.info span {
+  font-weight: 600;
+}
+
+.btn-learn-more {
+  background-color: #333333;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 15px;
+  width: fit-content;
+  align-self: center;
+}
+
+.btn-learn-more:hover {
+  background-color: #d4ed31;
+}
