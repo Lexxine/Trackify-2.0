@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listening Time Summary</title>
+    <link rel="stylesheet" href="/css/stylesFile.css">
+</head>
+<body>
+<div class="container">
+    <h1 th:text="'Okres słuchania: ' + ${dateRange}"></h1>
+
+
+    <table>
+        <thead>
+        <tr>
+            <th>Utwór</th>
+            <th>Artysta</th>
+            <th>Czas odtwarzania w minutach</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="entry : ${totalPlayTime}">
+            <td th:text="${entry.key.split(' - ')[0]}"></td>
+            <td th:text="${entry.key.split(' - ')[1]}"></td>
+            <td th:text="${entry.value}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

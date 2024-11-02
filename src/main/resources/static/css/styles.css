@@ -8091,9 +8091,12 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: #333333 !important;
 }
-
+.text-muted2 {
+  --bs-text-opacity: 1;
+  color: #ffffff !important;
+}
 .text-black-50 {
   --bs-text-opacity: 1;
   color: rgba(0, 0, 0, 0.5) !important;
@@ -10966,7 +10969,26 @@ section.cta:before {
   height: 100%;
   background: rgb(180, 147, 239);
 }
-
+section.cta2 {
+  position: relative;
+  padding: 15rem 0;
+  background-image: url("https://source.unsplash.com/5g41N3uRPf8/1500x800");
+  background-position: center;
+  background-size: cover;
+}
+section.cta2 .cta2-content {
+  position: relative;
+  z-index: 1;
+}
+section.cta2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(51, 51, 51);
+}
 .icon-feature {
   font-size: 4rem;
 }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter File Path</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333333;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: #333333;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            color: #b493ef;
+            font-weight: bold;
+        }
+        label {
+            font-size: 1.2em;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #555555;
+            margin-top: 10px;
+        }
+        button {
+            background-color: #b493ef;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #d4ed31;
+        }
+        #error {
+            color: #ff0000;
+            margin-top: 20px;
+        }
+        .instructions {
+            display: inline-block;
+            margin-top: 20px;
+            color: #b493ef;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+        .instructions:hover {
+            color: #d4ed31;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Wprowadź ścieżkę do pliku:</h1>
+    <form action="/showStreamingHistory" method="get">
+        <label for="filePath"></label>
+        <input type="text" id="filePath" name="filePath" required>
+        <button type="submit">Przejdź do swoich statystyk</button>
+    </form>
+    <a href="instruction" class="instructions">Potrzebujesz pomocy? Kliknij tutaj, aby zobaczyć instrukcję krok po kroku</a>
+
+</div>
+</body>
+</html>

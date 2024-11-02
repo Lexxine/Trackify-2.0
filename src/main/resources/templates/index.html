@@ -28,8 +28,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Moje statystyki</a></li>
-<!--                <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Download</a></li>-->
+                <li class="nav-item"><a class="nav-link me-lg-3" href="#features">My Top items</a></li>
+                <li class="nav-item"><a class="nav-link me-lg-3" href="#features2">Dowiedz się więcej</a></li>
             </ul>
             <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
                     <span class="d-flex align-items-center">
@@ -55,16 +55,26 @@
         </div>
     </div>
 </header>
-
-<!-- App features section-->
+<section class="cta">
+    <div class="cta-content">
+        <div class="container px-5">
+            <h2 class="text-white display-1 lh-1 mb-4">
+                "Muzyka nie jest czymś, co można usłyszeć, to coś, co można poczuć."
+                <br />
+                – Jimi Hendrix
+            </h2>
+        </div>
+    </div>
+</section>
+<!-- Features section with Step 1 and Step 2 -->
 <section id="features">
     <div class="container px-5">
         <div class="row gx-5 align-items-center">
             <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
                 <div class="container-fluid px-5">
                     <div class="row gx-5">
-                        <div class="col-md-6 mb-5">
-                            <!-- Feature item-->
+                        <!-- Existing feature items (Top Artists, Top Tracks, Top Genres)-->
+                        <div class="col-md-4 mb-5">
                             <div class="text-center">
                                 <a href="/top-artists" class="text-decoration-none">
                                     <i class="bi bi-stars icon-feature text-gradient d-block mb-3"></i>
@@ -72,46 +82,32 @@
                                 </a>
                                 <p class="text-muted mb-0">Odkryj swoich ulubionych artystów i śledź ich osiągnięcia! Zobacz, którzy z nich najczęściej pojawiają się w Twoich statystykach i odkryj, jak ich twórczość wpływa na Twoje muzyczne preferencje.</p>
                             </div>
-
                         </div>
-                        <div class="col-md-6 mb-5">
-                            <!-- Feature item-->
+                        <div class="col-md-4 mb-5">
                             <div class="text-center">
                                 <a href="/top-tracks" class="text-decoration-none">
                                     <i class="bi bi-music-note-list icon-feature text-gradient d-block mb-3"></i>
-                                    <h3 class="font-alt">Najczęściej Słuchane Piosenki</h3>
+                                    <h3 class="font-alt">Najczęściej słuchane piosenki</h3>
                                 </a>
                                 <p class="text-muted mb-0">Poznaj swoje muzyczne hity! Sprawdź, które utwory najczęściej pojawiają się w Twoim odtwarzaczu i odkryj, co tak naprawdę kręci Cię na dłużej.</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-5 mb-md-0">
-                            <!-- Feature item-->
+                        <div class="col-md-4 mb-5">
                             <div class="text-center">
                                 <a href="/top-genres" class="text-decoration-none">
                                     <i class="bi bi-earbuds icon-feature text-gradient d-block mb-3"></i>
-                                    <h3 class="font-alt">Ulubione Gatunki</h3>
+                                    <h3 class="font-alt">Ulubione gatunki</h3>
                                 </a>
-                                <p class="text-muted mb-0">Zanurz się w różnorodność muzyki! Zobacz, jakie gatunki najczęściej dominują w Twoim repertuarze</p>
+                                <p class="text-muted mb-0">Zanurz się w różnorodność muzyki! Zobacz, jakie gatunki najczęściej dominują w Twoim repertuarze.</p>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <!-- Feature item-->
-                            <div class="text-center">
-                                <a href="https://www.spotify.com/account/privacy" class="text-decoration-none" >
-                                    <i class="bi bi-clipboard-check icon-feature text-gradient d-block mb-3"></i>
-                                    <h3 class="font-alt">Potrzebujesz więcej informacji?</h3>
-                                    <p class="text-muted mb-0">Chcesz wiedzieć, ile minut spędziłeś na słuchaniu swoich ulubionych utworów? Możesz uzyskać szczegółowe dane od Spotify, w tym o czasie słuchania każdej piosenki.</p>
-                                </a>
-                            </div>
-                        </div>
-
                     </div>
+
                 </div>
             </div>
+
+            <!-- Features section device mockup-->
             <div class="col-lg-4 order-lg-0">
-                <!-- Features section device mockup-->
                 <div class="features-device-mockup">
                     <div class="video-wrapper" style="border-radius: 50px; overflow: hidden; width: 100%; height: auto;">
                         <video muted autoplay loop style="max-width: 100%; height: auto; border-radius: 50px;">
@@ -122,18 +118,45 @@
                 </div>
             </div>
         </div>
+    </div>
 </section>
 
+
+
 <!-- Call to action section-->
-<section class="cta">
-    <div class="cta-content">
+<section class="cta2">
+    <div class="cta2-content">
+        <section id="features2">
         <div class="container px-5">
-            <h2 class="text-white display-1 lh-1 mb-4">
-                "Muzyka nie jest czymś, co można usłyszeć, to coś, co można poczuć."
-                <br />
-                – Jimi Hendrix
-            </h2>
+            <h1 class="font-alt text-center text-decoration-none">Chcesz się dowiedzieć więcej?</h1>
+            <!-- Steps Section (Step 1 and Step 2)-->
+            <div class="row gx-5 mt-4 justify-content-center">
+                <!-- Step 1 -->
+                <div class="col-md-5 mb-5 text-center">
+                    <a href="https://www.spotify.com/account/privacy" class="text-decoration-none">
+                        <i class="bi bi-clipboard-check icon-feature text-gradient d-block mb-3"></i>
+                        <h3 class="font-alt">Krok 1: Poproś Spotify o swoje dane</h3>
+                        <p class="text-muted2 mb-0">
+                            Chcesz wiedzieć, ile minut spędziłeś na słuchaniu swoich ulubionych utworów?
+                            Wystarczy, że poprosisz Spotify o dostęp do danych (Extended streaming history).
+                            Po kilku dniach otrzymasz e-mail z danymi!
+                        </p>
+                    </a>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="col-md-5 mb-5 text-center">
+                    <a href="/upload" class="text-decoration-none">
+                        <i class="bi bi-music-note icon-feature text-gradient d-block mb-3"></i>
+                        <h3 class="font-alt">Krok 2: Prześlij plik z danymi</h3>
+                        <p class="text-muted2 mb-0">
+                            Teraz, gdy masz już dostęp do swoich danych, przejdź do strony przesyłania pliku, aby rozpocząć analizę swojego czasu spędzonego na słuchaniu muzyki.
+                        </p>
+                    </a>
+                </div>
+            </div>
         </div>
+        </section>
     </div>
 </section>
 
@@ -164,7 +187,7 @@
             </div>
             <div class="modal-footer">
                 <!-- Logout Button -->
-                <button id="logoutButton" class="btn custom-btn" onclick="logoutSpotify()">Wyloguj się z Spotify</button>
+                <button id="logoutButton" class="btn custom-btn" onclick="logoutSpotify()">Wyloguj się</button>
                 <button class="btn btn-outline-secondary" type="button" data-bs-dismiss="modal">Anuluj</button>
             </div>
         </div>

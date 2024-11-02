@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #333333;
+        }
+        #instructions {
+            padding: 60px 0;
+        }
+        .font-alt {
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .h1 {
+            font-family: 'Arial', sans-serif;
+            color: #b493ef;
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+        h3 {
+            margin-top: 20px;
+            font-size: 1.5rem;
+        }
+        .instruction-image {
+            max-width: 500px;
+            height: auto;
+            margin: 0 10px;
+        }
+        code {
+            color: #b493ef;
+            padding: 3px 5px;
+            border-radius: 4px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<section id="instructions">
+    <div class="container px-5">
+        <h1 class="h1 text-center mb-4">Instrukcje krok po kroku</h1>
+        <ol class="list-unstyled">
+            <li class="mb-4">
+                <h3 class="font-alt">1. Po dostaniu maila(Twoja rozszerzona historia odtwarzania jest gotowa do pobrania). Pobierz dane:</h3>
+                <div class="image-container">
+                    <img src="/assets/img/instructionImages/2024-10-30.png" alt="Pobierz dane" class="instruction-image" />
+                    <img src="/assets/img/instructionImages/2024-10-30%20(1).png" alt="Pobierz dane" class="instruction-image" />
+                </div>
+            </li>
+            <li class="mb-4">
+                <h3 class="font-alt">2. Otwórz pobrane dane w formacie zip w folderze</h3>
+            </li>
+            <li class="mb-4">
+                <h3 class="font-alt">3. Kliknij prawym przyciskiem na folder i wybierz "Wyodrębnij wszystkie"</h3>
+                <div class="image-container">
+                    <img src="/assets/img/instructionImages/2024-10-30%20(2).png" alt="Wyodrębnij wszystkie" class="instruction-image" />
+                </div>
+            </li>
+            <li class="mb-4">
+                <h3 class="font-alt">4. Wybierz lokalizację, gdzie chcesz przechowywać wyodrębnione pliki z danymi</h3>
+                <div class="image-container">
+                    <img src="/assets/img/instructionImages/2024-10-30%20(3).png" alt="Wybierz lokalizację" class="instruction-image" />
+                </div>
+            </li>
+            <li class="mb-4">
+                <h3 class="font-alt">5. Kiedy masz już wszystkie pliki wyodrębnione, otwórz folder. Powinieneś widzieć pliki o nazwie zaczynającej się od: <code>Streaming_History_Audio_ </code></h3>
+
+                <div class="image-container">
+                    <img src="/assets/img/instructionImages/2024-10-30%20(5).png" alt="Pliki" class="instruction-image" />
+                </div>
+            </li>
+            <li class="mb-4">
+                <h3 class="font-alt">6. Kliknij prawym przyciskiem na wybranym pliku i otwórz "Właściwości"</h3>
+                <div class="image-container">
+                    <img src="/assets/img/instructionImages/2024-10-30%20(6).png" alt="Właściwości" class="instruction-image" />
+                </div>
+            </li>
+            <li class="mb-4">
+                <h3 class="font-alt">7. Pełna, poprawna nazwa ścieżki do wyświetlenia twoich danych w aplikacji. To, co znajduje się przy: <strong>"Lokalizacja"</strong> + "\" + <strong>nazwa pliku</strong> + <strong>.json</strong>.
+                    Jest to bardzo ważne, aby ścieżka była poprawna. Przykładowa ścieżka powinna wyglądać tak: <code>C:\Users\Dell\Desktop\Streaming_History_Audio_2024_4.json</code></h3>
+                <div class="image-container">
+                    <img src="/assets/img/instructionImages/2024-10-30%20(7).png" alt="Ścieżka" class="instruction-image" />
+                    <img src="/assets/img/instructionImages/2024-10-30%20(8).png" alt="Ścieżka" class="instruction-image" />
+                </div>
+            </li>
+        </ol>
+    </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
