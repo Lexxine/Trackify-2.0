@@ -91,4 +91,3 @@ public class SpotifyController {
         return "trackCard";
     }
 }
-
