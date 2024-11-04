@@ -5,10 +5,17 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
+
 public class ExternalUrls {
     private String spotify;
+
+    public ExternalUrls(){}
+
+    public ExternalUrls(String spotify) {
+        this.spotify = spotify;
+    }
+
+    public String getSpotify() {
+        return spotify;
+    }
 }

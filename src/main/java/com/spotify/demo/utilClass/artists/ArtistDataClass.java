@@ -1,16 +1,22 @@
 package com.spotify.demo.utilClass.artists;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
 import java.util.List;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
 public class ArtistDataClass {
     private List<Artist> items;
+
+    public ArtistDataClass() {
+    }
+
+    public ArtistDataClass(List<Artist> items) {
+        this.items = items;
+    }
+
+    public List<Artist> getItems() {
+        return items;
+    }
+
+    public void setItems(List<Artist> items) {
+        this.items = items;
+    }
 }

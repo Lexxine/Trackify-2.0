@@ -1,15 +1,29 @@
 package com.spotify.demo.utilClass.artists;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
 public class Followers {
     private String href;
     private int total;
+
+    public Followers() {
+    }
+
+    public Followers(String href, int total) {
+        this.href = href;
+        this.total = total;
+    }
+
+    public String getHref() {
+        return href;
+    }
+
+    public void setHref(String href) {
+        this.href = href;
+    }
+
+    public int getTotal() {
+        return total;
+    }
+
+    public void setTotal(int total) {
+    }
 }
